@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --background-color: hsl(0, 0%, 100%);
+  --primary-color: #07006b;
+}
+body {
+  background-color: var(--background-color) !important;
+}
+
+.nav_section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  padding: 20px;
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+  background: var(--primary-color);
+  display: inline-block;
+}
+.nav_section.sticky {
+  padding: 15px 0;
+  background: var(--primary-color);
+}
+
+*/
+/* sort */
+/* #buttons .button {
+  border: 2px solid black;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+} */
+/* game list */
+* {
+  box-sizing: border-box;
+}
+
+#games {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 7em;
+}
+.game {
+  width: 23%;
+  box-shadow: 0 0 4px 3px var(--primary-color);
+  text-align: center;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+.title {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+
+.platform,
+.score,
+.genre,
+.editors_choice {
+  font-weight: bold;
+  text-transform: capitalize;
+  margin: 1em;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
