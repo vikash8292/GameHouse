@@ -2,7 +2,7 @@
 
 :root {
   --background-color: hsl(0, 0%, 100%);
-  --primary-color: #07006b;
+  --primary-color: #14006b;
 }
 body {
   background-color: var(--background-color) !important;
@@ -12,7 +12,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  color:azure;
+  color: azure;
   right: 0;
   z-index: 999;
   padding: 20px;
@@ -49,9 +49,9 @@ body {
 }
 .game {
   width: 23%;
+  background-color: brown;
   box-shadow: 0 0 4px 3px var(--primary-color);
   text-align: center;
-  background-color:brown;
   padding: 1.5em;
   margin-bottom: 2em;
 }
