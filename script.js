@@ -18,3 +18,24 @@ fetch("game.txt")
   .catch((err) => {
     console.log(err);
   });
+
+
+const search = () => {
+  const searchbox = document.getElementById("search-item").value.toUpperCase();
+  const storeitems = document.getElementById("games");
+  const product = document.querySelectorAll(".game");
+  const pname = storeitems.getElementsByTagName("h1");
+
+  for (var i = 0; i < pname.length; i++) {
+    let match = product[i].getElementsByTagName("h1")[0];
+
+    if (match) {
+      let textvalue = match.textContent || match.innerHTML;
+      if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+        product[i].style.display = "";
+      } else {
+        product[i].style.display = "none";
+      }
+    }
+  }
+};
