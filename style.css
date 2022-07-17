@@ -47,14 +47,34 @@ body {
   flex-wrap: wrap;
   padding-top: 7em;
 }
-.game {
-  width: 23%;
-  background-color: brown;
-  box-shadow: 0 0 4px 3px var(--primary-color);
-  text-align: center;
-  padding: 1.5em;
-  margin-bottom: 2em;
+@media screen and (max-width:850px) {
+  #games {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 7em;
+  }
+  .game{
+    width: 70%;
+    background-color: brown;
+    box-shadow: 0 0 4px 3px var(--primary-color);
+    text-align: center;
+    padding: 1.2em;
+    margin-bottom: 2em;
+  }
 }
+@media screen and (min-width:850px){
+  .game {
+    width: 25%;
+    background-color: brown;
+    box-shadow: 0 0 4px 3px var(--primary-color);
+    text-align: center;
+    padding: 1.5em;
+    margin-bottom: 2em;
+  }
+}
+
 .title {
   font-size: 1.3rem;
   color: var(--primary-color);
